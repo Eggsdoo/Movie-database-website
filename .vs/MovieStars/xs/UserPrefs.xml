@@ -1,0 +1,44 @@
+﻿<Properties StartupConfiguration="{4A5FD53A-3220-4636-9D2B-D960185F4C14}|Default">
+  <MonoDevelop.Ide.ItemProperties.MovieStars PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/Actor.cshtml">
+    <Files>
+      <File FileName="API/Fetch.cs" Line="108" Column="50" />
+      <File FileName="Models/PersonImages.cs" Line="1" Column="1" />
+      <File FileName="Models/Person.cs" Line="28" Column="10" />
+      <File FileName="Pages/Actor.cshtml" Line="13" Column="27" />
+      <File FileName="Pages/Actor.cshtml.cs" Line="1" Column="1" />
+      <File FileName="Models/Cast.cs" Line="1" Column="1" />
+      <File FileName="wwwroot/css/site.css" Line="72" Column="14" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MovieStars" expanded="True">
+            <Node name="MovieStars" expanded="True">
+              <Node name="API" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Actor.cshtml" expanded="True" selected="True" />
+                <Node name="Index.cshtml" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="lib" expanded="True">
+                  <Node name="bootstrap" expanded="True">
+                    <Node name="dist" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

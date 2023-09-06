@@ -1,0 +1,58 @@
+@page "{actorID?}"
+<!-- actorID in curly brace will show the actor id number in the url, cool thing I learned 
+I learned how to work with Bootstrap and it is a complete game changer! -->
+@model ActorModel
+
+<section class="p-5"> <!-- padding 5 -->
+    @if (Model.person != null) {
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"> <!-- column medium 3 -->
+                    <div class="person-image">
+                        <img src="@Model.person?.GetProfilePath()"/>
+                    </div>
+                    <h4 class="pt-2">Personal Info</h4> <!-- padding top 2-->
+                    <p>
+                        <strong>Known For</strong>
+                        @Model.person.known_for_department
+                    </p>
+                    <p>
+                        <strong>Birthday</strong>
+                        @Model.person.birthday
+                    </p>
+                    <p>
+                        <strong>Age</strong>
+                        @Model.person.GetAge()
+                    </p>
+                    <p>
+                        <strong>Place of Birth</strong>
+                        @Model.person.place_of_birth
+                    </p>
+
+                </div>
+                <div class="col-md-9"> <!-- column medium 9 -->
+                    <h2>@Model.person.name</h2>
+                    <h4 class="pt-2">Biography</h4> <!-- padding top 2-->
+                    <p>@Model.person.biography</p>
+                    <div id="known_for_scroller" class="scroller_wrap should_fade is_fading"> <!-- scroller fade for pictures --> 
+                        <ul class="horizontal_media_list scroller"> 
+                            @if (Model.personImages.profiles.Count > 0) {
+                                foreach (var item in Model.personImages.profiles) {
+                                    <li>
+                                        <div class="image">
+                                            <img loading="lazy" class="poster" src="@item.GetFilePath()" width="150" alt="Ready or Not">
+                                        </div>
+                                    </li>
+                                }
+                            }   
+                        </ul>
+                    </div>
+                    <div class="profileImage">
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    }
+</section>
